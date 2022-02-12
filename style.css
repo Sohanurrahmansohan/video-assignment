@@ -1,0 +1,400 @@
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* header section */
+
+.header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+.logo-1{
+    padding: 6px 0;
+}
+.logo-1 img{
+    width: 50px;
+}
+
+.logo-2 h3{
+    padding-top: 12px;
+    padding-left: 15px;
+}
+.logo-2 h3:hover{
+    color: #CECCCC;
+}
+
+
+
+.menu{}
+.menu ul{
+    display: flex;
+    text-align: left;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li a {
+    padding: 0 13px;
+    line-height: 62px;
+    font-size: 15px;
+    color: #000;
+    transition: .4s all ease-in-out;
+}
+.menu ul li a:hover{
+    color: #6278DF;
+}
+.menu ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    display: block;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s all ease-in-out;
+}
+.menu ul ul li{
+    display: block;
+}
+.menu ul ul li a{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.menu ul ul li:last-child a{
+    border-bottom: none;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.head-right a{
+    padding: 10px 30px;
+    border: 2px solid #6278DF;
+    line-height: 62px;
+    border-radius: 5px;
+    color: #6278DF;
+    font-weight: bold;
+    transition: .4s all ease-in-out;
+}
+.head-right a:hover{
+    background-color: #6278DF;
+    color: #fff;
+}
+
+
+/* banner section */
+
+
+.banner {
+    background-image: url(https://i.ibb.co/S6F846R/mbr-10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.472);
+    z-index: -1;
+}
+
+
+.banner-con {
+    color: #fff;
+    text-align: center;
+}
+.banner-con p {
+    font-size: 23px;
+}
+.banner-con h1 {
+    font-size: 39px;
+    padding: 16px 0;
+}
+.banner-form {
+    padding-top: 32px;
+}
+.banner-form input {
+    width: 399px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #5ba533 !important;
+    border: none;
+    transition: .5s;
+}
+.banner-form input:focus {
+    outline: none;
+    border: 1px solid #6F83E1;
+    box-shadow: 1px 1px 12px 4px #6f83e1;
+}
+.banner-form a {
+    margin-left: 30px;
+    padding: 16px 80px;
+    background-color: RGB(91,165,51);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: .4s all ease-in-out;
+}
+.banner-form a:hover{
+    border: 2px solid #6F83E1;
+    color: #6F83E1;
+    background-color: #fff;
+}
+
+
+/* price section */
+
+
+.price {
+    padding: 50px 0;
+}
+.price-iner {
+    text-align: center;
+}
+.price-iner h1 {
+    font-weight: 600;
+    font-size: 43px;
+}
+.price-iner h6 {
+    font-size: 16px;
+    color: #767676c9;
+    font-weight: 400;
+}
+
+
+/* banner bottom */
+
+
+.banner-bot {
+    background-color: #f7f9ff;
+    padding: 50px 0;
+}
+
+.banner-bot-left {
+    padding-top: 130px;
+}
+.banner-bot-left h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+.banner-bot-left p {
+    font-size: 17px;
+    padding: 0 45px 0 0;
+}
+
+
+/* blog section */
+
+.blog{
+    padding: 60px 0;
+}
+.blog h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+}
+.blog h3 {
+    color: #767676;
+    font-weight: normal;
+    font-family: 'Work Sans',sans-serif;
+    font-size: 22px;
+}
+.blog-box{
+    height: 250px;
+    box-shadow: 1px 1px 10px -6px #000;
+    border-radius: 5px;
+    transition: .5s;
+}
+.blog-box:hover{
+    box-shadow: 1px 1px 17px -7px #6278df;
+}
+.blog-img{
+    width: 40%;
+    overflow: hidden;
+}
+.blog-img img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    border-radius: 5px 5px;
+}
+
+.blog-con {
+    width: 60%;
+    padding: 26px;
+}
+.blog-con h4 {
+    font-weight: 600;
+}
+.blog-con p {
+	line-height: 26px;
+	color: #767676;
+	font-size: 16px;
+}
+
+
+
+/* overly section */
+
+
+.overly-box{
+    position: relative;
+}
+.overly-box::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #6279dfa1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s all ease-in-out;
+}
+.overly-box:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/* secrvice section */
+
+
+
+.service{
+    background-color: #F7F9FF;
+    padding: 80px 0;
+}
+.service-wid{
+    width: 75%;
+    margin: auto;
+}
+.service-content h1 {
+    font-size: 46px;
+    font-weight: 400;
+}
+.service-content h4 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
+.service-iner {
+    background: #fff;
+    padding: 50px 30px 30px 50px;
+    border-radius: 5px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    transition: all 0.3s;
+}
+.service-iner h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+.service-iner p {
+    font-size: 17px;
+    padding: 15px 0; 
+    color: #767676;
+}
+.service-iner ul {
+    padding-left: 0;
+}
+.service-iner ul li {
+    padding: 14px 0;
+    font-size: 20px;
+    color: #767676;
+}
+.service-iner ul li i{
+    padding-right: 10px;
+    font-size: 26px;
+    color: #6278DF;
+}
+.service-iner ul li span{
+    font-size: 15px;
+}
+.ser-but1{
+    margin: 18px 0;
+}
+.ser-but1 a {
+	color: #6278DF;
+	padding: 15px 30px;
+	border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .4s all ease-in-out;
+}
+.ser-but a {
+	color: #6278DF;
+	padding: 15px 30px;
+	border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .4s all ease-in-out;
+}
+
+
+.service-iner:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.service-iner:hover .ser-but1 a{
+    background-color: #6278DF;
+    color: #fff;
+}
+.service-iner:hover .ser-but a{
+    background-color: #6278DF;
+    color: #fff;
+}
+
+.service-iner .ser-but a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.service-iner .ser-but1 a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
